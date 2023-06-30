@@ -183,7 +183,8 @@ If you like this project, please give me a star.
 
 Big thanks to:
 - Microverse
-- The original author of this wonderful design, Cindy Shin in Behance.
+- [Cindy Shin in Behance](https://www.behance.net/adagio07) is credited with the original  concept and idea for the design showcased.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
