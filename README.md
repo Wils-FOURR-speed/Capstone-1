@@ -183,8 +183,8 @@ If you like this project, please give me a star.
 
 Big thanks to:
 - Microverse
-- [Cindy Shin in Behance](https://www.behance.net/adagio07) is credited with the original  concept and idea for the design showcased.
-
+<<<<<<< HEAD
+- [Cindy Shin in Behance](https://www.behance.net/adagio07) is credited with the original  concept and idea for the design showcase.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
