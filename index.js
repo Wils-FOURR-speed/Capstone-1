@@ -1,6 +1,7 @@
 const hamburger = document.getElementById('menu');
-// const closeBtn = document.getElementById('close');
+const closeBtn = document.getElementById('close');
 const menuItem = document.getElementById('item');
+const li = document.getElementById('li');
 const items = document.querySelectorAll('.item');
 const Spcan = document.getElementById('Spcann');
 
@@ -12,12 +13,15 @@ items.forEach((elmt) => {
 
 hamburger.addEventListener('click', () => {
   menuItem.style = 'display: block;';
-  hamburger.src = './Images/close.svg';
 });
 
-// closeBtn.addEventListener('click', () => {
-//   menuItem.style = 'display: none;';
-// });
+closeBtn.addEventListener('click', () => {
+  menuItem.style = 'display: none;';
+});
+
+li.addEventListener('click', () => {
+  menuItem.style = 'display: none;';
+});
 
 const Speakers = [
   {

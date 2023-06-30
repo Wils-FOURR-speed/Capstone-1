@@ -7,6 +7,20 @@
   font-family: 'Lato', sans-serif;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.ham,
+.closes {
+  display: none;
+}
+
 .nav-menu {
   display: none;
 }
@@ -26,11 +40,16 @@
   padding: 20px 0 20px 0;
 }
 
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
 .iconCan {
   width: 300px;
   height: 100%;
-
-  /* background-color: #d3d3d3; */
   margin: 0 20px 0 auto;
   gap: 20px;
 }
@@ -40,17 +59,10 @@
 }
 
 .subLeft img {
-  width: 150px;
+  width: 160px;
   height: 60px;
   object-fit: cover;
   object-position: center;
-}
-
-.logo-container img {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
 }
 
 .end-logo img {
@@ -84,6 +96,13 @@
   /* background-color: blue; */
   height: 100%;
   gap: 15px;
+}
+
+.moblie-abso {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
 }
 
 .subMiddle {
@@ -128,6 +147,21 @@ header {
   padding: 70px 0 0 12%;
 }
 
+.About-page {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 0 0 12%;
+}
+
+.line {
+  height: 4px;
+  width: 3%;
+  background-color: #ec5242;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+
 .headerTextContent {
   /* background-color: blue; */
   padding: 50px 5px;
@@ -135,6 +169,17 @@ header {
 
 .headerTextContent h1 {
   color: #ec5242;
+}
+
+.headerTextContent-about {
+  padding: 50px 5px;
+}
+
+.headerTextContent-about h1 {
+  color: #ec5242;
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 55px;
 }
 
 .headerTextContent h2 {
@@ -152,12 +197,25 @@ header {
   border: 3px solid #eeedf0;
 
   /* font-weight: 550; */
-  font-size: 10px;
+  font-size: 15px;
   color: #26272b;
   max-width: 600px;
   padding: 20px;
   background-color: #d3d3d3;
   margin: 8px;
+}
+
+.header_p-about {
+  /* box-shadow: 0 0 10px #fff; */
+  border: 3px solid #d3d3d3;
+
+  /* font-weight: 550; */
+  font-size: 25px;
+  color: #26272b;
+  max-width: 1050px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 80px auto;
 }
 
 .header2 {
@@ -172,6 +230,29 @@ header {
 .header2 :nth-child(2) {
   font-size: 20px;
   font-weight: 600;
+}
+
+.header2-about {
+  padding: 30px 0 100px 0;
+}
+
+.header2-about :nth-child(1) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-section1 a {
+  display: flex;
+  justify-content: center;
+  text-decoration-color: #d3d3d3;
+  color: #d3d3d3;
+  font-size: 30px;
+}
+
+.header2-about :nth-child(2) b a {
+  font-size: 20px;
+  font-weight: 900;
+  color: #26272b;
 }
 
 .content1 h3 {
@@ -192,12 +273,50 @@ header {
   margin: 0 auto;
 }
 
+.container1 h3 {
+  font-size: 50px;
+  color: #766c6c;
+}
+
+.container2 h3 {
+  font-size: 50px;
+  color: #706767;
+}
+
 .site-logos .head h3 {
   color: #d3d3d3;
   font-size: 32px;
 }
 
 .site-logos .head .line {
+  height: 4px;
+  width: 50%;
+  background-color: #ec5242;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.site-logos-about {
+  background-color: rgb(58, 58, 60);
+  padding: 30px 0 20px 0;
+  min-height: 250px;
+  display: none;
+}
+
+.site-logos-about .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.site-logos-about .head h3 {
+  color: #d3d3d3;
+  font-size: 32px;
+}
+
+.site-logos-about .head .line {
   height: 4px;
   width: 50%;
   background-color: #ec5242;
@@ -258,10 +377,19 @@ header {
 
 .main-program3 .head .line {
   height: 4px;
-  width: 50%;
+  width: 3%;
   background-color: #ec5242;
   border-radius: 5px;
-  margin: 10px;
+  margin: 40px auto;
+}
+
+.paragraph2 {
+  max-width: 900px;
+  margin: 7px auto;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #9e9c9c;
 }
 
 .main-program .main-section1 .head h3 {
@@ -285,8 +413,12 @@ header {
   gap: 1rem;
 }
 
+.main-section1 {
+  width: 70%;
+  margin: auto;
+}
+
 .main-program .main-section1 .content {
-  /* background-color: red; */
   padding: 20px;
   width: 70%;
   margin: 50px auto;
@@ -306,7 +438,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
   margin: 0 auto;
 }
 
@@ -317,10 +448,19 @@ header {
 
 .main-program2 .main-section1 .head .line {
   height: 4px;
-  width: 50%;
+  width: 10%;
   background-color: #ec5242;
   border-radius: 5px;
-  margin: 10px;
+  margin: 30px;
+}
+
+.paragraph {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #9e9c9c;
 }
 
 .main-program3 {
@@ -331,12 +471,13 @@ header {
 
 .logo-container {
   /* box-shadow: 0 0 10px #fff; */
-  border: 5px solid #d3d3d3;
+  border: 3px solid #d3d3d3;
   font-weight: 700;
-  max-width: 600px;
+  height: 150px;
+  max-width: 400px;
   padding: 20px;
   background-color: #fff;
-  margin: 8px;
+  margin: 8px auto;
 }
 
 hr {
@@ -378,29 +519,9 @@ hr {
   text-align: center;
 }
 
-.main-section1 a {
-  display: flex;
-  justify-content: center;
-  text-decoration-color: #d3d3d3;
-  color: #d3d3d3;
-  font-size: 30px;
-}
-
 .join {
   display: none;
 }
-
-/* .join {
-    background-color: #ec5242;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    font-size: 35px;
-    height: 90px;
-    margin-block: 2em;
-    padding: 0 0 0 40px;
-  } */
 
 .whole-featured-speakers {
   padding: 50px;
@@ -457,19 +578,52 @@ hr {
   gap: 110px;
 }
 
-.acknowledgement {
-  background-color: #fff;
-  padding: 30px 0 20px 0;
-  height: 180px;
+.pic-container {
   display: flex;
+  gap: 50px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 70px;
 }
 
-.acknowledgement-about {
-  background-color: #272a31;
-  padding: 30px 0 20px 0;
-  height: 180px;
+.container1 {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #26272b;
+  height: 250px;
+  width: 450px;
+  background-image: url(./Images/BillGate.jpg);
+  background-blend-mode: soft-light;
+  background-color: rgba(192, 58, 58, 0.813);
+}
+
+.container1 p {
+  font-size: 25px;
+  color: #696464;
+  font-weight: 400;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #26272b;
+  height: 250px;
+  gap: 10px;
+  width: 450px;
+  background-image: url(./Images/ElonMusk.jpg);
+  background-blend-mode: soft-light;
+  background-color: rgba(192, 58, 58, 0.813);
+}
+
+.container2 p {
+  font-size: 25px;
+  color: #6a6060;
+  font-weight: 400;
 }
 
 .rights-reserved {
@@ -488,12 +642,22 @@ hr {
 }
 
 .secc {
-  /* background-color: blue; */
   padding: 20px;
 }
 
+.secc-about {
+  padding: 70px;
+  background-color: rgb(46, 45, 45);
+}
+
 .lastsec {
-  /* background-color: red; */
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+}
+
+.lastsec-about {
   height: 100%;
   width: 80%;
   margin: auto;
@@ -587,10 +751,6 @@ hr {
     font-size: 20px;
   }
 
-  .desktop-nav {
-    display: none;
-  }
-
   .hamburger {
     position: absolute;
     height: 90px;
@@ -627,17 +787,82 @@ hr {
     color: red;
   }
 
-  /* .closemenu {
-        position: absolute;
-        right: 50px;
-        width: 30px;
-    } */
+  .pic-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-  /* .subRight a {
-        border: 5px solid #ec5242;
-        padding: 10px 15px;
-        text-decoration: none;
-        color: #ec5242;
-        font-weight: 700;
-    } */
+@media screen and (max-width: 1310px) {
+  .About-page {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .paragraph {
+    max-width: 700px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .secc-about {
+    background-color: #fff;
+  }
+
+  .site-logos-about {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  .subMiddle {
+    gap: 30px;
+  }
+
+  .subNav {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moblie-abso {
+    position: fixed;
+    background-color: rgb(109, 106, 106);
+    left: 0;
+    right: 2px;
+    bottom: 0;
+    top: 0;
+    display: none;
+  }
+
+  .subMiddle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subLeft,
+  .upper-nav {
+    display: none;
+  }
+
+  .ham,
+  .closes {
+    display: block;
+  }
+
+  .subRight {
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  .rights-reserved-about {
+    color: #26272b;
+  }
+
+  .lastsec-about {
+    width: 100%;
+  }
 }

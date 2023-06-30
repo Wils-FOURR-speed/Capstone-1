@@ -34,11 +34,11 @@
 
 # 📖 CAPSTONE-1
 
-This is my first Micronaut capstone project. No complex coding is required for this exercise. The goal is to master all of the tools and best practices learned in previous steps. They will all be used in every Microverse project and most likely future jobs, and so it is important to know them!
-1-HTML
-2-CSS
-3-Linters
-4-JavaScript
+This is my first Micronaut capstone project. Some complex coding is required for this exercise. The goal is to master all of the tools and best practices learned in previous steps. 
+- HTML and CSS best practices, Linters documentation, JavaScript.
+
+![Preview Image](Images/preview.png)
+
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -52,6 +52,7 @@ This is my first Micronaut capstone project. No complex coding is required for t
     <li>HTML</li>
     <li>CSS</li>
     <li>js</li>
+    <li><a href="https://fonts.googleapis.com"><li>
   </ul>
 </details>
 
@@ -61,6 +62,7 @@ This is my first Micronaut capstone project. No complex coding is required for t
 - Added index.html file
 - Added style.css file
 - Added index.js file
+- Included Linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,15 +83,24 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- NodeJs installed.
-- A Web Browser like Google Chrome, Firefox, Microsoft Edge, Opera, etc.
-- A Code Editor like VSCode, Atom, etc.
+1. A Code Editor like:
+- VSCode
+- Atom, etc.
+
+2. NodeJs extension installed in your code editor.
+
+3. A Web Browser like
+- Google Chrome
+- Firefox
+- Microsoft Edge
+- Opera, etc.
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/Wils-FOURR-speed/My-portfolio.git
+git clone https://github.com/Wils-FOURR-speed/Capstone-1.git
 
 ### Install
 
@@ -114,8 +125,21 @@ Open the index.html using live server.
 
 To run tests, run the following command:
 
-[] Coming soon
+- To trace all linter errors, run
+  ...
 
+  npx hint .
+  ...
+- To check any styling error, run  
+  ...
+
+  npx stylelint "**/*.{css,scss}"
+  ...
+- To trace any JavaScript error, run
+  ...
+
+  npx eslint .
+  ...
 
 
 ## 👥 Author <a name="Wilsan"></a>
@@ -134,10 +158,7 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] Add a header
-- [ ] Add a footer
-- [ ] Add more styling to the page
-- [ ] Add a contact form
+- [ ] Add more transitions and animations effects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +167,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Wils-FOURR-speed/Capstone-1/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,9 +181,9 @@ If you like this project, please give me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-
-I would like to thank the Microverse staff and other team members, and my coding partners too.
+Big thanks to:
+- Microverse
+- The original author of this wonderful design, Cindy Shin in Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
